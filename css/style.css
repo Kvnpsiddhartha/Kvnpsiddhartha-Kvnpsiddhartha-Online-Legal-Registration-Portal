@@ -1,0 +1,447 @@
+:root {
+  --bg-primary: #0d6986;
+  --btn-primary: #f4f4f4;
+  --font-primary: #ffffff;
+  --font-secondary: #00475d;
+  --font-para: #746f79;
+}
+* {
+  font-family: "Work Sans";
+  font-style: normal;
+}
+.font-primary {
+  color: var(--font-primary) !important;
+}
+.navbar {
+  padding: 20px 100px;
+}
+.navbar-brand {
+  font-family: "Vollkorn SC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+.navbar-nav {
+  width: 470px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.backg-primary {
+  background-color: var(--bg-primary);
+}
+.button-primary {
+  color: #0d6986;
+  background-color: var(--btn-primary);
+}
+.button-primary:focus,
+.button-primary:hover {
+  background-color: #8ec7d2;
+}
+.nav-link {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}
+.nav-link.active {
+  font-weight: 600;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 5px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  transform-origin: right top !important;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+  background-color: #ffffff;
+}
+.nav-link.active::after {
+  background-color: #ffffff;
+}
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link.active::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+.decription-section {
+  background-color: var(--bg-primary);
+  height: 580px;
+}
+#description {
+  margin: 50px;
+  padding-top: 50px;
+}
+.description-heading {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: var(--font-primary);
+}
+.description-para {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--font-primary);
+  margin-top: 27px;
+}
+#book-consult {
+  margin-top: 76px;
+}
+.why-section {
+  height: 548px;
+  padding: 90px;
+}
+.bg-linear-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(142, 199, 210, 0.17) 0%,
+    rgba(142, 199, 210, 0.27) 100%
+  );
+}
+.section-heading {
+  color: var(--font-secondary);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+}
+.section-heading-small {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--font-secondary);
+  margin-top: 34px;
+}
+.section-para {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: var(--font-para);
+  margin-top: 20px;
+}
+#why-content {
+  margin-top: 90px;
+}
+.why-border-right {
+  border-right: 0.5px solid #0d6986;
+}
+.reasons-section {
+  padding: 58px 90px;
+  height: 656px;
+  background-color: var(--bg-primary);
+}
+.reasons-content {
+  padding: 60px;
+  background-color: #effbff;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.sub-heading {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: #00475d;
+}
+.products-section {
+  padding: 90px;
+}
+.products-items {
+  border: 1px solid #8ec7d2;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 33px;
+}
+.why-choose-section {
+  padding: 60px 100px;
+}
+.form {
+  padding: 30px 60px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.form-label {
+  color: #228daf;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+.form-input,
+.form-select {
+  border: 1.5px solid #b6edff;
+  border-radius: 6px;
+  padding: 14px 24px;
+}
+.form-input::placeholder {
+  color: #d7cfde;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}
+.form-select::selection {
+  color: #00475d;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}
+.button-secondary {
+  margin: 10px;
+  padding: 10px;
+  background: #0d6986;
+  color: var(--font-primary);
+  width: 100%;
+}
+.footer {
+  padding: 65px 100px;
+  background: #00475d;
+}
+.footer-heading {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+}
+.footer-text {
+  color: #d7cfde;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+a.footer-text {
+  text-decoration: none;
+}
+.footer-copyright {
+  color: #a3a0a7;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+a.footer-copyright {
+  text-decoration: none;
+}
+
+.bg-image {
+  background-image: url(../assets/header-img.png);
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+.container-box {
+  position: absolute;
+  width: 100%;
+  min-height: 380px;
+}
+.backg-transparent {
+  background-color: rgba(13, 105, 134, 0.9) !important;
+}
+.heading {
+  padding-top: 80px;
+}
+.head-small {
+  color: var(--font-primary);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+}
+.head-big {
+  color: var(--font-primary);
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+}
+.aboutus-section {
+  padding: 60px 100px;
+}
+.who-we-section {
+  padding: 100px;
+}
+
+.power-section {
+  padding: 125px;
+}
+.para-pad {
+  padding-right: 50px;
+  text-align: justify;
+}
+.entrepreneur-section {
+  padding: 80px 100px;
+}
+.contact-us-section {
+  padding: 70px 110px;
+}
+.txt-primary {
+  color: #00475d;
+}
+.brder-primary-thick {
+  border: 5px solid #0d6986;
+  border-radius: 10px;
+}
+.brder-secondary-thin {
+  border: 1px solid #8ec7d2;
+  border-radius: 20px;
+}
+.line-text {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #00475d;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.line-text span {
+  background: #fff;
+  padding: 0 10px;
+}
+.contact-button {
+  width: 226px;
+  border-radius: 100px;
+  padding: 10px 0;
+}
+.social-icons {
+  padding: 5px;
+  border-radius: 50%;
+  background: #ede5f4;
+  margin: 0 10px;
+}
+.register-section {
+  padding: 60px 100px;
+}
+.about-company-section {
+  color: var(--font-primary);
+  padding: 60px 100px;
+}
+.benefits-section {
+  padding: 80px 100px;
+}
+.benefits-box {
+  padding: 20px 15px;
+  width: 385px;
+  height: 325px;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.para-justify {
+  text-align: justify;
+}
+.txt-secondary {
+  color: var(--font-primary);
+}
+.eligibility-section {
+  padding: 90px 100px;
+}
+.eligibility-box {
+  padding: 20px;
+  border-radius: 20px;
+  width: 295px;
+  height: 442px;
+  border: 1px solid #8ec7d2;
+  background: linear-gradient(
+    180deg,
+    rgba(142, 199, 210, 0.17) 0%,
+    rgba(142, 199, 210, 0.27) 100%
+  );
+}
+.steps-section {
+  padding: 100px;
+}
+.requirement-section {
+  padding: 90px 100px;
+}
+.online-company-section {
+  padding: 40px 100px;
+}
+.filter-section {
+  padding: 70px 100px;
+}
+.filter-section .nav-link::after,
+.filter-section .nav-link.active::after {
+  background-color: var(--bg-primary);
+}
+.filter-section .nav-item.active {
+  color: var(--font-secondary);
+  font-style: bold;
+}
+.drop select {
+  border: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 35px;
+}
+.drop select:focus,
+.drop select:active {
+  border: 0;
+  box-shadow: unset;
+}
+.hr {
+  background-color: #d7cfde;
+  margin-top: 0;
+}
+.link {
+  color: #4070f6;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: underline;
+  text-decoration-color: #4070f6;
+  text-underline-offset: 10px;
+}
+.posts-section {
+  padding: 0 100px;
+}
+
+.post {
+  height: 488px;
+  padding: 0 10px;
+  margin-bottom: 110px;
+}
+.post-text {
+  color: #746f79;
+  text-align: justify;
+  letter-spacing: -0.333333px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+.page-link {
+  border: unset;
+  color: #a3a0a7;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.page-item.active {
+  color: #00475d;
+  --bs-pagination-active-color: #00475d;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  background-color: white !important;
+  --bs-pagination-active-bg: white;
+}
+.post-desc{
+  padding: 40px 100px;
+}
+.included-section{
+  padding: 80px 100px 0px 100px;
+}
+.documents-req-section{
+  padding: 100px;
+}
+.txt-bold{
+  font-weight: bold;
+}
